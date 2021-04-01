@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://use.typekit.net/vwk5lok.css");
+
+/* NOTE: LINK OPACITY IS LOCATED IN THE MEDIA TAG */
+
+/* Misc */
+
+body {
+    transition: .3s;
+    margin: 0px;
+    padding: 0px;
+    /*background: url(/assets/goldengate.png) no-repeat center center fixed;
+    background-size: cover;*/
+    animation: 10s linear infinite;
+    background-color: white;
+}
+.elements {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-0%, -50%);
+}
+@keyframes pride {
+    0%{background-color: rgb(255, 0, 0, .70);}
+    14%{background-color: rgb(255, 166, 0, .70);}
+    28%{background-color: rgb(255, 255, 0, .70);}
+    42%{background-color: rgb(0, 128, 0, .70);}
+    56%{background-color: rgb(0, 0, 255, .70);}
+    70%{background-color: rgb(129, 0, 129, .70);}
+    100%{background-color: rgb(255, 0, 0, .70);}
+}
+/*.gallery {
+    margin-top: 100px;
+} */
+::selection {
+    background: black;
+    color: white;
+}
+header::selection{
+    color: black;
+    background: white;
+}
+#alright {
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+}
+
+/* Nav Bar */
+
+li {
+    display: inline;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: ltr;
+}
+#spc {
+    margin-bottom: 30px;
+}
+ul #nobg {
+    margin-left: 0px;
+}
+#nobg {
+    background-color: transparent;
+}
+#active {
+    color: rgba(0, 0, 0);
+}
+.links img {
+    margin-right: 20px;
+}
+header {
+    padding: 1%;
+    padding-left: 10%;
+    font: 400 15px "Work Sans", sans-serif;
+    background: black;
+    color: white;
+}
+
+/* Text */
+
+p {
+    font: 500 22px "Work Sans", sans-serif;
+    line-height: 40px;
+}
+a {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font: 400 16px "Work Sans", sans-serif;
+    transition: .3s;
+}
+h3 {
+    font: 400 16px "Work Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+ul a {
+    margin-left: 22px;
+}
+.links a {
+    display: flex;
+    flex-direction: ltr;
+    margin-top: 20px;
+}
+
+/* Gallery 
+
+.gallery_container {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+.gallery_image {
+    background: white;
+    margin: 0px 20px 20px 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 15px 5px #bdbdbd50;
+}
+.gallery_image h3 {
+    padding: 5%;
+    z-index: 1000;
+    display: inline-flex;
+    white-space: nowrap;
+    max-width: 0px;
+}
+#cnt {
+    position: relative;
+    transition: .2s;
+    left: 165px;
+    color: rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+#cnt:hover {
+    color: rgba(0, 0, 0, 0.30);
+}
+#cnt:active {
+    color: rgba(0, 0, 0, 0.40);
+} */
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    .elements {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    body {
+        background-image: none;
+        background: rgb(243, 243, 243);
+    }
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+    /*body { background: url(/assets/goldengate.png) no-repeat center center fixed black; color: white; background-size: cover;}*/
+    body{color: white; background: black;}
+    a {color: #ffffff79;}
+    a:hover {color: #ffffffc5;}
+    img {filter: invert(100%);}
+    img::selection, header::selection, a::selection{color: white; background: black;}
+    ::selection{color: black; background: white;}
+    header{color: black; background: white;}
+    header a{color: black; font-weight: 600;}
+    header a:hover{color: black;}
+}
+@media (prefers-color-scheme: light) {
+    /*body { background: url(/assets/goldengate.png) no-repeat center center fixed blue; color: white; background-size: cover;}*/
+    body{color: black; background: white;}
+    a {color: #00000079;}
+    a:hover {color: #000000c5;}
+    ::selection{color: white; background: black;}
+    header::selection{color: black; background: white;}
+    header a{color: white; font-weight: 600;}
+    header a:hover{color: white;}
+}
+
+/* Mobile */
+
+@media only screen and (max-width:1000px) {
+    header {
+        display: none;
+    }
+}
