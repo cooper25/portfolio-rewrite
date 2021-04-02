@@ -27,7 +27,7 @@ export default function Home() {
         <meta property="twitter:image" content="https://coopertsoris.dev/assets/thumbnail.png/"/>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1a7b87ab2d484241818047ef8bf2771d"}'></script>
       </Helmet>
-      <header id="header"><b>Hey!</b> Did you know this website is open-source? You can download it on <a target="_blank" rel="noreferrer" href="https://github.com/cooper25/portfolio-rewrite">GitHub</a>.</header>
+      <header id="header"><b>Hey!</b> Did you know this website is open-source? You can view it on <a target="_blank" rel="noreferrer" href="https://github.com/cooper25/portfolio-rewrite">GitHub</a>.</header>
       <div className="elements">
         <ul id="spc">
           <li><a id="nobg" href={"/"}><img id="active" draggable="false" height="20" src="/assets/homepng.png"></img></a></li>
