@@ -77,15 +77,27 @@ ul #nobg {
 header {
     padding: 1%;
     padding-left: 10%;
-    font: 400 15px "Neue Haas", sans-serif;
+    font: 400 15px "neue-haas-grotesk-text", sans-serif;
     background: black;
     color: white;
+}
+header a {
+    font-family: "neue-haas-grotesk-text";
+}
+#tg {
+    padding: 4px;
+    background: #FCE0E3;
+    color: black;
+    border-radius: 5px;
+    font: 500 75% "Inter", sans-serif;
+    display: inline;
+    margin-left: 5px;
 }
 
 /* Text */
 
 p {
-    font: 500 22px "Work Sans", sans-serif;
+    font: 400 22px "neue-haas-grotesk-text", sans-serif;
     line-height: 40px;
 }
 a {
@@ -93,6 +105,7 @@ a {
     padding: 0px;
     text-decoration: none;
     font: 400 16px "Work Sans", sans-serif;
+    white-space: nowrap;
     transition: .3s;
 }
 h3 {

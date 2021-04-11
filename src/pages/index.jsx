@@ -4,7 +4,7 @@ import "../components/main.css"
 
 export default function Home() {
   return (
-    <body id="bd">
+    <body>
       <Helmet>
         <title>coopertsoris</title>
         <link id="favicon" rel="shortcut icon" type="image/png" href="/assets/favicon.png"></link>
@@ -27,11 +27,12 @@ export default function Home() {
         <meta property="twitter:image" content="https://coopertsoris.dev/assets/thumbnail.png/"/>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1a7b87ab2d484241818047ef8bf2771d"}'></script>
       </Helmet>
-      <header id="header"><b>Hey!</b> Did you know this website is open-source? You can view it on <a target="_blank" rel="noreferrer" href="https://github.com/cooper25/portfolio-rewrite">GitHub</a>.</header>
+      {/*<header id="header"><b>Looking for my social media?</b> You can view the directory by clicking <a target="_blank" rel="noreferrer" href="https://directory.cppr.design/">here</a>.</header>*/}
       <div className="elements">
         <ul id="spc">
           <li><a id="nobg" href={"/"}><img id="active" draggable="false" height="20" src="/assets/homepng.png"></img></a></li>
-          <li><a href={"mailto:hello@coopertsoris.dev"}>contact</a></li>
+          <li><a target="_blank" rel="noreferrer" href={"https://directory.cppr.design/"}>directory<div id="tg">new</div></a></li>
+          <li><a target="_blank" rel="noreferrer" href={"mailto:hello@coopertsoris.dev"}>email</a></li>
         </ul><br/>
         <img draggable="false" height="50" src="./assets/fullname.svg"></img>
         <p id="spc">Web Designer <br/>& Designer based in the US.</p>
