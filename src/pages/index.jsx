@@ -30,16 +30,16 @@ export default function Home() {
       {/*<header id="header"><b>Looking for my social media?</b> You can view the directory by clicking <a target="_blank" rel="noreferrer" href="https://directory.cppr.design/">here</a>.</header>*/}
       <div className="elements">
         <ul id="spc">
-          <li><a draggable="false" id="nobg" href={"/"}><img id="active" height="20" src="/assets/homepng.png"></img></a></li>
-          <li><a draggable="false" target="_blank" rel="noreferrer" href={"https://directory.cppr.design/"}>directory<div id="tg">NEW</div></a></li>
-          <li><a draggable="false" target="_blank" rel="noreferrer" href={"mailto:hello@coopertsoris.dev"}>email</a></li>
+          <li><a id="nobg" href={"/"}><img id="active" draggable="false" height="20" src="/assets/homepng.png"></img></a></li>
+          <li><a target="_blank" rel="noreferrer" href={"https://directory.cppr.design/"}>directory<div id="tg">new</div></a></li>
+          <li><a target="_blank" rel="noreferrer" href={"mailto:hello@coopertsoris.dev"}>email</a></li>
         </ul><br/>
         <img draggable="false" height="50" src="./assets/fullname.svg"></img>
         <p id="spc">Web Designer <br/>& Designer based in the US.</p>
         <div className="links">
           <a><img height="25" src="/assets/location.png"/><div id="hvran">milwaukee</div></a>
-          <a draggable="false" target="_blank" rel="noreferrer" id="nobg" href="mailto:hello@coopertsoris.dev"><img draggable="false" height="15" src="/assets/mail.png"/><div id="hvran">hello@coopertsoris.dev</div></a>
-          <a draggable="false" target="_blank" rel="noreferrer" id="nobg" href="https://discord.com/users/307273393600724994/"><img draggable="false" height="22" src="/assets/discord.png"/><div id="hvran">cooper#0325</div></a>
+          <a target="_blank" rel="noreferrer" id="nobg" href="mailto:hello@coopertsoris.dev"><img draggable="false" height="15" src="/assets/mail.png"/><div id="hvran">hello@coopertsoris.dev</div></a>
+          <a target="_blank" rel="noreferrer" id="nobg" href="https://discord.com/users/307273393600724994/"><img draggable="false" height="22" src="/assets/discord.png"/><div id="hvran">cooper#0325</div></a>
         </div>
       </div>
     </body>
