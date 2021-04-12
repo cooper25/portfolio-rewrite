@@ -35,7 +35,7 @@ export default function Home() {
           <li><a target="_blank" rel="noreferrer" href={"mailto:hello@coopertsoris.dev"}>email</a></li>
         </ul><br/>
         <img draggable="false" height="50" src="./assets/fullname.svg"></img>
-        <p id="spc">Web Designer <br/>& Designer based in the US.</p>
+        <p id="spc">Graphic & Web<br/>Designer from the US.</p>
         <div className="links">
           <a><img height="25" src="/assets/location.png"/><div id="hvran">milwaukee</div></a>
           <a target="_blank" rel="noreferrer" id="nobg" href="mailto:hello@coopertsoris.dev"><img draggable="false" height="15" src="/assets/mail.png"/><div id="hvran">hello@coopertsoris.dev</div></a>
