@@ -7,13 +7,9 @@ body {
     transition: .3s;
     margin: 0px;
     padding: 0px;
-    /*background: url(/assets/goldengate.png) no-repeat center center fixed;
-    background-size: cover;*/
     background-color: white;
 }
 .elements {
-    animation-delay: .1s;
-    animation: onload .2s linear;
     margin: 0px;
     padding: 0px;
     position: absolute;
@@ -21,13 +17,6 @@ body {
     left: 10%;
     transform: translate(-0%, -50%);
 }
-@keyframes onload {
-    0%{opacity: 0%;}
-    100%{opacity: 100%;}
-}
-/*.gallery {
-    margin-top: 100px;
-} */
 ::selection {
     background: black;
     color: white;
